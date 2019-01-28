@@ -14,7 +14,7 @@ public class BuildSite {
         root = "/Users/jena/Desktop/BC/Projects/ColorfulWords/";
         newHTMLSection = buildSiteText();
         buildSiteFile();
-        
+        System.out.println("Site completed!");
     }
 
     public String buildSiteText() throws FileNotFoundException{
@@ -22,9 +22,7 @@ public class BuildSite {
         String formatB = "</div>";
 
         // Builds the formatted section
-        int size = allWords.size();
-        for (int i = 0; i < size; i++){
-            String color = allWords.get(i);
+        for (String color : allWords){
             newHTMLSection += (formatA + color + "\">" + color + formatB) + "\n";
         }
 
