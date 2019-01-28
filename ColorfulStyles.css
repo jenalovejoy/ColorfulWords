@@ -1,0 +1,21 @@
+#title {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#colorCollection {
+    margin: auto;
+}
+
+.colorItem {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    float: left;
+    margin: 15px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+}
