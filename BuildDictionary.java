@@ -39,7 +39,7 @@ public class BuildDictionary {
     }
 
     // Brings a word to 6 characters with randomly generated numbers for padding
-    // I chose to pad the words in the center to slant the end result towards bluer tones
+    // I chose to pad the words in the center to slant the end result towards blue/green tones
     public String padWord(String word){
         
         int length = 6 - word.length();
@@ -61,10 +61,14 @@ public class BuildDictionary {
     // Adding additional formatting and creating more options
     public void finishWords(){
         for (String startWord : allWordsRaw){
-            for (int i = 0; i < 4; i++){ // creates 4 different hexidecimal versions of a given word
-                String newWord = "#" + padWord(startWord);
-                allWordsPadded.add(newWord);
-                newWord = "";
+            if (startWord.length() == 6){
+                allWordsPadded.add("#" + startWord);
+            } else {
+                for (int i = 0; i < 4; i++){ // creates 4 different hexidecimal versions of a given word
+                    String newWord = "#" + padWord(startWord);
+                    allWordsPadded.add(newWord);
+                    newWord = "";
+                }
             }
         }
     }
