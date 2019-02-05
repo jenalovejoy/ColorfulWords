@@ -1,8 +1,13 @@
+// Jena Lovejoy
+// FindHexWords.java parses through a text file of all English words to find 
+// 2-6 letter words that contain only the letters A-F and prints those to a separate file
+
 import java.util.regex.*;
 import java.util.*;
 import java.io.*;
 
 public class FindHexWords {
+
     public static void main(String[] args) throws IOException, FileNotFoundException {
         File fullDictionary = new File("Dictionary.txt");
         File acceptedHexWords  = new File("AllHexWords.txt");
@@ -23,9 +28,10 @@ public class FindHexWords {
             Matcher hexWordsMatcher = hexWordsPattern.matcher(word);
 
             if (hexWordsMatcher.find()){
-                printToAllWords.println(word.toUpperCase());
+                printToAllWords.println(word.toUpperCase()); 
             }
         }
+        
         printToAllWords.close();
         readFile.close();
     }
