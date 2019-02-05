@@ -31,7 +31,7 @@ public class FindHexWords {
                 printToAllWords.println(word.toUpperCase()); 
             }
         }
-        
+
         printToAllWords.close();
         readFile.close();
     }

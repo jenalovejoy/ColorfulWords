@@ -1,0 +1,22 @@
+{
+  "name": "colorfulwords",
+  "version": "1.0.0",
+  "description": "a website showcasing english words as hex colors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenalovejoy/ColorfulWords.git"
+  },
+  "author": "Jena Lovejoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenalovejoy/ColorfulWords/issues"
+  },
+  "homepage": "https://github.com/jenalovejoy/ColorfulWords#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
